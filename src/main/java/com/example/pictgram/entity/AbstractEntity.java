@@ -10,6 +10,9 @@ import javax.persistence.PreUpdate;
 import lombok.Data;
 
 @MappedSuperclass
+/** ↑DB共通のエンティティであることを表す
+ *  （このエンティティクラスを継承できる）
+ * */
 @Data
 public class AbstractEntity {
 	@Column(name = "created_at")
