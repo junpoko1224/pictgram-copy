@@ -27,14 +27,17 @@ import lombok.Data;
 public class User extends AbstractEntity implements UserDetails, UserInf {
 	private static final long serialVersionUID = 1L;
 	
+	// ↓Authority(管理者)の種類はROLE_USERとROLE_ADMIN
 	public enum Authority {
 		ROLE_USER, ROLE_ADMIN
 	};
 	
+	// ↓親インスタンスのコンストラクタの呼び出しをするコンストラクタ
 	public User() {
 		super();
 	}
 	
+	// ↓引数4つのコンストラクタ
 	public User(String email, String name, String password, Authority authority) {
 		this.username = email;
 		this.name = name;
@@ -43,6 +46,7 @@ public class User extends AbstractEntity implements UserDetails, UserInf {
 	}
 	
 	@Id
+	// ↓idの自動採番のためのアノテーション
 	@SequenceGenerator(name = "users_id_seq")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long userId;
@@ -57,6 +61,7 @@ public class User extends AbstractEntity implements UserDetails, UserInf {
 	private String password;
 	
 	@Column(nullable = false)
+	// ↓永続化フィールドを列挙型として指定、(EnumType.STRING)でString型を指定
 	@Enumerated(EnumType.STRING)
 	private Authority authority;
 	

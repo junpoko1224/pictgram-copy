@@ -1,3 +1,4 @@
+// @PasswordEqualsというアノテーションの作成
 package com.example.pictgram.validation.constraints;
 
 import java.lang.annotation.Documented;
