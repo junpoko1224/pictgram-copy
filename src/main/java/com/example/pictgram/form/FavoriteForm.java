@@ -10,4 +10,5 @@ public class FavoriteForm {
     private Long topicId;
 
     private TopicForm topic;
+    
 }
