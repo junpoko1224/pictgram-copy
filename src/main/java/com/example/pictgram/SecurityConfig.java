@@ -59,7 +59,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll();
         // @formatter:on
     }
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authenticationProvider);

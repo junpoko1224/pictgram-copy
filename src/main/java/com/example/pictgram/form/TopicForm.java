@@ -37,4 +37,7 @@ public class TopicForm {
     
     private FavoriteForm favorite;
 
+    private List<FavoriteForm> favorites;
+    
+    private FavoriteForm favorite;
 }

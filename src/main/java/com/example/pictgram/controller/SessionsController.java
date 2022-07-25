@@ -14,6 +14,9 @@ public class SessionsController {
 	@Autowired
 	private MessageSource messageSource;
 
+	@Autowired
+	private MessageSource messageSource;
+	
     @GetMapping(path = "/login")
     public String index() {
         return "sessions/new";
