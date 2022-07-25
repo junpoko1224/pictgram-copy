@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class SessionsController {
+	
+	@Autowired
+	private MessageSource messageSource;
 
 	@Autowired
 	private MessageSource messageSource;

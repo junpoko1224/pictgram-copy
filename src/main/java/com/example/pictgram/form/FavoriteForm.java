@@ -10,5 +10,8 @@ public class FavoriteForm {
     private Long topicId;
 
     private TopicForm topic;
+<<<<<<< HEAD
     
+=======
+>>>>>>> topic/8
 }

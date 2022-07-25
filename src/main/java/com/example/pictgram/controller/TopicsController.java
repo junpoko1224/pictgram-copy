@@ -34,11 +34,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+<<<<<<< HEAD
 import com.example.pictgram.entity.Comment;
 import com.example.pictgram.entity.Favorite;
 import com.example.pictgram.entity.Topic;
 import com.example.pictgram.entity.UserInf;
 import com.example.pictgram.form.CommentForm;
+=======
+import com.example.pictgram.entity.Favorite;
+import com.example.pictgram.entity.Topic;
+import com.example.pictgram.entity.UserInf;
+>>>>>>> topic/8
 import com.example.pictgram.form.FavoriteForm;
 import com.example.pictgram.form.TopicForm;
 import com.example.pictgram.form.UserForm;
@@ -46,6 +52,9 @@ import com.example.pictgram.repository.TopicRepository;
 
 @Controller
 public class TopicsController {
+	
+	@Autowired
+	private MessageSource messageSource;
 
 	@Autowired
 	private MessageSource messageSource;
@@ -82,8 +91,13 @@ public class TopicsController {
 
     public TopicForm getTopic(UserInf user, Topic entity) throws FileNotFoundException, IOException {
         modelMapper.getConfiguration().setAmbiguityIgnored(true);
+<<<<<<< HEAD
         modelMapper.typeMap(Topic.class, TopicForm.class).addMappings(mapper -> mapper.skip(TopicForm::setFavorites));
         modelMapper.typeMap(Topic.class, TopicForm.class).addMappings(mapper -> mapper.skip(TopicForm::setComments));
+=======
+        modelMapper.typeMap(Topic.class, TopicForm.class).addMappings(mapper -> mapper.skip(TopicForm::setUser));
+        modelMapper.typeMap(Topic.class, TopicForm.class).addMappings(mapper -> mapper.skip(TopicForm::setFavorites));
+>>>>>>> topic/8
         modelMapper.typeMap(Favorite.class, FavoriteForm.class).addMappings(mapper -> mapper.skip(FavoriteForm::setTopic));
 
         boolean isImageLocal = false;
@@ -115,6 +129,7 @@ public class TopicsController {
         
         List<FavoriteForm> favorites = new ArrayList<FavoriteForm>();
         for (Favorite favoriteEntity : entity.getFavorites()) {
+<<<<<<< HEAD
 	        FavoriteForm favorite = modelMapper.map(favoriteEntity, FavoriteForm.class);
 	        favorites.add(favorite);
 	        if (user.getUserId().equals(favoriteEntity.getUserId())) {
@@ -130,6 +145,15 @@ public class TopicsController {
 	    	comments.add(comment);
 	    }
 	    form.setComments(comments);
+=======
+        	FavoriteForm favorite = modelMapper.map(favoriteEntity, FavoriteForm.class);
+        	favorites.add(favorite);
+        	if (user.getUserId().equals(favoriteEntity.getUserId())) {
+        		form.setFavorite(favorite);
+        	}
+        }
+        form.setFavorites(favorites);
+>>>>>>> topic/8
 
         return form;
     }
@@ -160,7 +184,12 @@ public class TopicsController {
 
     @RequestMapping(value = "/topic", method = RequestMethod.POST)
     public String create(Principal principal, @Validated @ModelAttribute("form") TopicForm form, BindingResult result,
+<<<<<<< HEAD
     		Model model, @RequestParam MultipartFile image, RedirectAttributes redirAttrs, Locale locale) throws IOException {
+=======
+    		Model model, @RequestParam MultipartFile image, RedirectAttributes redirAttrs, Locale locale)
+            throws IOException {
+>>>>>>> topic/8
         if (result.hasErrors()) {
             model.addAttribute("hasMessage", true);
             model.addAttribute("class", "alert-danger");

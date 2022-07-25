@@ -41,7 +41,11 @@ public class UserController {
 	
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public String create(@Validated @ModelAttribute("form") UserForm form, BindingResult result, Model model,
+<<<<<<< HEAD
 		   RedirectAttributes redirAttrs, Locale locale) {
+=======
+			RedirectAttributes redirAttrs, Locale locale) {
+>>>>>>> topic/8
 		String name = form.getName();
 		String email = form.getEmail();
 		String password = form.getPassword();
