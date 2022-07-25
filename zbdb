@@ -1,0 +1,59 @@
+[33mcommit eb9bd065158b202460417eba7f0f1e430ab14f08[m[33m ([m[1;36mHEAD -> [m[1;32mtopic/8[m[33m, [m[1;31morigin/topic/8[m[33m)[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Mon Jul 25 17:25:52 2022 +0900
+
+    commit
+
+[33mcommit 5830240f62fd1db044b48f44159f7658b2b96f19[m[33m ([m[1;31morigin/topic/6[m[33m, [m[1;32mtopic/6[m[33m)[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Mon Jul 25 15:31:01 2022 +0900
+
+    25. お気に入り画面の作成 #6
+
+[33mcommit e7d52e851a80d439a99e435b8caac44a02dde727[m[33m ([m[1;31morigin/topic/4[m[33m, [m[1;31mheroku/main[m[33m, [m[1;32mtopic/4[m[33m)[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Sat Jul 23 14:17:04 2022 +0900
+
+    24. 話題投稿画面の作成 #4
+
+[33mcommit 0f04dab83ae52e83750b5ed9563114b14f6755be[m[33m ([m[1;31morigin/topic/2[m[33m, [m[1;32mtopic/2[m[33m)[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Thu Jul 21 20:39:29 2022 +0900
+
+    23. ユーザー登録画面とログイン画面の作成 #2
+
+[33mcommit b718d27a892f0f2b57f07690f2286e71f26d6b73[m[33m ([m[1;31mheroku/topic/2[m[33m)[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Wed Jul 13 17:28:30 2022 +0900
+
+    確認
+
+[33mcommit ed671e2f2f86ef803fc713399cbebd1448c049e0[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Wed Jul 13 16:48:23 2022 +0900
+
+    バージョンの変更（17→16）
+
+[33mcommit 91d4d7554d5b88fb67e30cf7633894b9d5159477[m[33m ([m[1;31morigin/topic/1[m[33m, [m[1;32mtopic/1[m[33m)[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Wed Jul 13 16:30:59 2022 +0900
+
+    add Procfile
+
+[33mcommit f687bc4f7d0062f468eb5a00c21c6070e056a969[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Wed Jul 13 16:27:54 2022 +0900
+
+    add system.properties
+
+[33mcommit 346ca582ac2b0b7fc4f96f8601202e7f3f61f37a[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Wed Jul 13 10:31:41 2022 +0900
+
+    gitignore
+
+[33mcommit 34e9f0a98d148f712c905298a49101315d0f9a15[m
+Author: junko <junpoko1224@gmail.com>
+Date:   Wed Jul 13 09:50:43 2022 +0900
+
+    first commit
