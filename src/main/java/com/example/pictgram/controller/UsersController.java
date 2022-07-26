@@ -22,7 +22,7 @@ import com.example.pictgram.form.UserForm;
 import com.example.pictgram.repository.UserRepository;
 
 @Controller
-public class UserController {
+public class UsersController {
 	
 	@Autowired
 	private MessageSource messageSource;
@@ -40,12 +40,7 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
-	public String create(@Validated @ModelAttribute("form") UserForm form, BindingResult result, Model model,
-<<<<<<< HEAD
-		   RedirectAttributes redirAttrs, Locale locale) {
-=======
-			RedirectAttributes redirAttrs, Locale locale) {
->>>>>>> topic/8
+	public String create(@Validated @ModelAttribute("form") UserForm form, BindingResult result, Model model, RedirectAttributes redirAttrs, Locale locale) {
 		String name = form.getName();
 		String email = form.getEmail();
 		String password = form.getPassword();
